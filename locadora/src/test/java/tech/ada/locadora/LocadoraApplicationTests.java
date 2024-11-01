@@ -1,10 +1,10 @@
-package tech.ada.locadora_de_carros;
+package tech.ada.locadora;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LocadoraDeCarrosApplicationTests {
+class LocadoraApplicationTests {
 
 	@Test
 	void contextLoads() {
