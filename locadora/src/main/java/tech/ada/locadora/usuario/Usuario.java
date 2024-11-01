@@ -63,4 +63,12 @@ public class Usuario {
     public void setCnh(String cnh) {
         this.cnh = cnh;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
