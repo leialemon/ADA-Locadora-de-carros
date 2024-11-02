@@ -1,7 +1,9 @@
-package tech.ada.locadora.usuario;
+package tech.ada.locadora.service;
 
 import org.springframework.stereotype.Service;
 import tech.ada.locadora.exceptions.ObjetoNaoEncontradoException;
+import tech.ada.locadora.model.Usuario;
+import tech.ada.locadora.repository.UsuarioRepository;
 
 import java.util.List;
 
@@ -13,10 +15,6 @@ public class UsuarioService {
 
     public UsuarioService(UsuarioRepository usuarioRepository){
         this.usuarioRepository = usuarioRepository;
-    }
-
-    public void criarUsuario(Usuario usuario){
-        usuarioRepository.save(usuario);
     }
 
     public Usuario buscarUsuarioPorCpf(String cpf){

@@ -1,13 +1,13 @@
-package tech.ada.locadora;
+package tech.ada.locadoraVeiculos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LocadoraApplication {
+public class LocadoraVeiculosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LocadoraApplication.class, args);
+		SpringApplication.run(LocadoraVeiculosApplication.class, args);
 	}
 
 }

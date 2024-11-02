@@ -1,4 +1,4 @@
-package tech.ada.locadora.usuario;
+package tech.ada.locadora.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
