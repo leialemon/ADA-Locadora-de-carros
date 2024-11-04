@@ -1,5 +1,6 @@
 package tech.ada.locadoraVeiculos.controller;
 
+import jakarta.persistence.criteria.CriteriaBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import tech.ada.locadoraVeiculos.model.TipoDeVeiculo;
@@ -41,5 +42,10 @@ public class VeiculoController {
     @GetMapping("/buscar/")
     public Veiculo buscarVeiculoPorPlaca(@PathVariable String placa){
         return buscarVeiculoService.buscarPorPlaca(placa);
+    }
+
+    @GetMapping("/disponiveis")
+    public Integer mostrarQuantidadeDeVeiculosDisponiveis(){
+        return buscarVeiculoService.buscarQuantidadeDeVeiculosDisponivel();
     }
 }

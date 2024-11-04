@@ -28,4 +28,8 @@ public class BuscarVeiculoService {
     public Veiculo buscarPorPlaca(String placa){
         return veiculoRepositorio.findByPlaca(placa).orElseThrow(() -> new ObjetoNaoEncontradoException("Nenhum veículo encontrado com a placa:", placa));
     }
+
+    public Integer buscarQuantidadeDeVeiculosDisponivel(){
+        return veiculoRepositorio.mostrarNumeroDeVeiculosDisponiveis();
+    }
 }
